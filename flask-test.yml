@@ -1,0 +1,10 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://openfaas.luxinbo.top
+functions:
+  flask-test:
+    lang: python3-http-debian
+    handler: ./flask-test
+    image: lxb007981docker/flask-test:latest
+
